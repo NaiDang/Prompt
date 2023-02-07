@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Prompt</title>
+    <style>
+        #KQ{
+            color: rgb(168, 24, 151);
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+     
+    <p>Click the button to enter your date of birth</p>
+    <button onclick="TinhTong()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        // var myDate=new Date();
+        // var myYear=myDate.getFullYear();
+        // var myMonth=myDate.getMonth();
+        // var myDayNum=myDate.getDate();
+        // var myDayName=myDate.getDay();
+        // alert("Today is "+myDayName +""+myDayNum+""+myMonth+""+myYear); 
+        // function TinhTuoi(){
+ //Ngay_thang_nam sinh
+         function TinhTong(){
+         var D=new Date();
+         var ngaysinh=new Date(2003-11-13)
+         var Name            =prompt("Nhập tên của bạn :")
+         var DateOfBirth     =prompt("Nhập ngày sinh của bạn: ",0);
+        var MonthOfBirth    =prompt("Nhập tháng sinh của bạn: ",0);
+        var YearOfBirth     =prompt("Nhập năm sinh của bạn: ",0);
+        var ngay_thu        =D.getDay();
+        var ngay_thu_sinh   =ngaysinh.getDay();
+        var SoTuoi          =D.getFullYear()- YearOfBirth;
+        alert("Hiện tại " +Name+"," +SoTuoi +" tuổi, sinh ngày "
+        +DateOfBirth+" tháng "+MonthOfBirth+" năm "+YearOfBirth+" và bạn sinh vào thứ"+ ngay_thu_sinh);
+     }
+    </script>
+   
+    </body>
+</html>
